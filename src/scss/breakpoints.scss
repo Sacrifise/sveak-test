@@ -19,7 +19,7 @@
   }
   
   @mixin desktop {
-    @media (min-width: 1125px) and (max-width: 1439px) {
+    @media (min-width: 1125px) and (max-width: 1440px) {
       @content;
     }
   }

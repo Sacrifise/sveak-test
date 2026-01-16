@@ -33,6 +33,10 @@
       visibility: hidden;
       pointer-events: none;
     }
+    @include large-desktop {
+      visibility: hidden;
+      pointer-events: none;
+    }
   }
 }
 

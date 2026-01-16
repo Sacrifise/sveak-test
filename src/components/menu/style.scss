@@ -53,6 +53,16 @@
       display: none !important;
     }
   }
+  @include large-desktop {
+    background-color: unset;
+    min-width: 310px;
+    padding: 40px 30px;
+    position: sticky;
+
+    .close-button-container {
+      display: none !important;
+    }
+  }
 
   .menu-container {
     display: flex;
