@@ -1,0 +1,20 @@
+doctype html
+html(lang="ru")
+head
+  meta(charset="UTF-8")
+  meta(name="viewport" content="width=device-width, initial-scale=1.0")
+  title SVEAK Test
+  
+body
+  .wrapper
+    .container
+      .content 
+        include ./components/menu/menu.pug
+        main.content-container
+          include ./components/header/header.pug
+          include ./components/content/content.pug
+      include ./components/footer/footer.pug
+      
+      
+    
+  script(type="module" src="/src/main.js")

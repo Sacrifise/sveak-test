@@ -1,0 +1,41 @@
+@use '../../scss/breakpoints.scss' as *;
+@use '../../scss/mixins.scss' as *;
+
+.header {
+  background-color: #95D9FF;
+  position: sticky;
+  top: 0;
+  z-index: 998;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+
+  .social-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 15px;
+  }
+
+  .burger-button {
+    display: flex;
+    align-items: center;
+    visibility: visible;
+    pointer-events: all;
+
+    @include small-desktop {
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    @include desktop {
+      visibility: hidden;
+      pointer-events: none;
+    }
+  }
+}
+
+body:has(.burger-button:focus-within) .menu {
+  transform: translateX(0%);
+}

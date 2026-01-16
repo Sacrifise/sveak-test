@@ -1,0 +1,19 @@
+aside.menu 
+    .close-button-container
+        .close-button
+            img(src='/Cross.svg')
+    ul.menu-container
+        
+        li.menu-link.menu-active-link 
+            span
+                a Active Link
+        - for (let i = 1; i <= 20; i++)
+            li.menu-link 
+                span 
+                    a Link #{i} 
+        li.menu-link 
+                span 
+                    a Two Rows Super Mega Link
+        li.menu-link 
+                span 
+                    a Too Loong  Super Ultra Mega Ultimate Unusual Link
