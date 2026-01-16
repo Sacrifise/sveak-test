@@ -1,5 +1,0 @@
-import './scss/styles.scss'
-import './components/content/style.scss'
-import './components/footer/style.scss'
-import './components/header/style.scss'
-import './components/menu/style.scss'

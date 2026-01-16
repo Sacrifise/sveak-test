@@ -1,9 +1,0 @@
-@mixin hide-incomplete-rows-in-container($columns) {
-    @for $remainder from 1 through ($columns - 1) {
-      & > .card:nth-child(#{$columns}n + 1):nth-last-child(#{$remainder}) {
-        &, & ~ .card {
-          display: none;
-        }
-      }
-    }
-  }
